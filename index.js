@@ -28,7 +28,7 @@ class StardewValley {
     this.name = 'Stardew Valley';
     this.logo = 'gameart.jpg';
     this.requiredFiles = process.platform == 'win32'
-      ? ['Stardew Valley.exe']
+      ? ['StardewValley.GameData.dll']
       : ['StardewValley', 'StardewValley.exe'];
     this.environment = {
       SteamAPPId: '413150',
@@ -66,7 +66,8 @@ class StardewValley {
       // Windows
       'C:\\Program Files (x86)\\GalaxyClient\\Games\\Stardew Valley',
       'C:\\Program Files (x86)\\GOG Galaxy\\Games\\Stardew Valley',
-      'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley'
+      'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley',
+	  'C:\Program Files (x86)\Steam\steamapps\content\app_413150\depot_413153'
     ];
   }
 
